@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;700&family=Roboto+Mono:ital,wght@0,100;0,400;0,500;0,600;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  background-color: #ffffff;
+  color: #87939e;
+
+  font-family: 'Poppins', sans-serif;
+}
+ul li {
+  list-style: none;
+}
+.small-box {
+  width: 0.9rem;
+  height: 0.9rem;
+  background: #00a76f;
+}
+
+.progress-bar {
+  margin: 10px auto;
+  height: 8px;
+  background: #edeff1;
+}
+
+.bar {
+  min-width: 1%;
+}
+.arrow-btn {
+  width: 30px;
+  height: 30px;
+}
+.arrow-btn:hover {
+  background: #f6f5f5;
+}
+.user-img {
+  width: 20%;
+}
+/* =====sidebar start==== */
+
+/* =====sidebar end==== */
+
+.sml-desc {
+  font-size: 0.7rem;
+}
+.book-img {
+  height: 200px;
+  object-fit: cover;
+}
