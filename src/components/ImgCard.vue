@@ -7,7 +7,7 @@
           <span class="fw-medium">Total Booking</span>
         </div>
         <div class="card-img d-flex justify-content-center align-content-center">
-          <img src="/card1.svg" alt="" class=" " />
+          <img src="../assets/card1.svg" alt="" class=" " />
         </div>
       </div>
     </div>
@@ -18,7 +18,7 @@
           <span class="fw-medium">Total Booking</span>
         </div>
         <div class="card-img d-flex justify-content-center align-content-center">
-          <img src="/card2.svg" alt="" class=" " />
+          <img src="../assets/card2.svg" alt="" class=" " />
         </div>
       </div>
     </div>
@@ -30,7 +30,7 @@
           <span class="fw-medium">Total Booking</span>
         </div>
         <div class="card-img d-flex justify-content-center align-content-center">
-          <img src="/card3.svg" alt="" class="" />
+          <img src="../assets/card3.svg" alt="" class="" />
         </div>
       </div>
     </div>

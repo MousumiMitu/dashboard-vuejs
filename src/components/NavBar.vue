@@ -6,25 +6,25 @@
 
     <div class="d-flex align-items-center">
       <a href="/" class="navItems d-flex align-items-center justify-content-center rounded-circle">
-        <img src="united-kingdom.png" alt="" class="w-50" />
+        <img src="../assets/united-kingdom.png" alt="" class="w-50" />
       </a>
       <a href="/" class="navItems d-flex align-items-center justify-content-center rounded-circle">
-        <img src="notification.png" alt="" class="w-50" />
+        <img src="../assets/notification.png" alt="" class="w-50" />
       </a>
       <a href="/" class="navItems d-flex align-items-center justify-content-center rounded-circle">
-        <img src="group.png" alt="" class="w-50" />
+        <img src="../assets/group.png" alt="" class="w-50" />
       </a>
       <a
         href="/"
         class="navItems d-flex align-items-center justify-content-center ms-1 rounded-circle"
       >
-        <img src="gear.png" alt="" class="w-50" />
+        <img src="../assets/gear.png" alt="" class="w-50" />
       </a>
       <a
         href="/"
         class="navItems d-flex align-items-center justify-content-center ms-1 rounded-circle"
       >
-        <img src="man.png" alt="" class="w-75" />
+        <img src="../assets/man.png" alt="" class="w-75" />
       </a>
     </div>
   </nav>
@@ -32,14 +32,13 @@
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
-// import { BsSearch } from 'vue-icons/bs';
 
 const stickyClass = ref('')
 
 const stickNavbar = () => {
   if (typeof window !== 'undefined') {
     const windowHeight = window.scrollY
-    // Adjust the threshold as needed
+
     stickyClass.value = windowHeight > 120 ? 'sticky-nav' : ''
   }
 }

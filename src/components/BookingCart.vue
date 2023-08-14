@@ -49,11 +49,15 @@
 </template>
 
 <script setup>
+import bg1 from '../assets/bg1.jpg'
+import bg2 from '../assets/bg2.jpg'
+import man from '../assets/man.png'
+
 const card = [
-  { id: 1, img: 'bg1.jpg', img2: 'man.png', price: '52.12' },
-  { id: 1, img: 'bg2.jpg', img2: 'man.png', price: '45' },
-  { id: 1, img: 'bg1.jpg', img2: 'man.png', price: '14.5' },
-  { id: 1, img: 'bg2.jpg', img2: 'man.png', price: '100' }
+  { id: 1, img: bg1, img2: man, price: '52.12' },
+  { id: 1, img: bg2, img2: man, price: '45' },
+  { id: 1, img: bg1, img2: man, price: '14.5' },
+  { id: 1, img: bg2, img2: man, price: '100' }
 ]
 </script>
 

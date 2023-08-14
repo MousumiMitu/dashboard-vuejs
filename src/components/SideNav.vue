@@ -20,7 +20,7 @@
       "
     >
       <div :class="collapse ? 'logo-btn mb-4' : 'logo-btn mx-auto mb-2'">
-        <img src="letter-m.png" alt="" class="w-100" />
+        <img :src="logo" alt="" class="w-100" />
       </div>
       <div>
         <h6 v-if="collapse" class="fs-6 pb-2">Overview</h6>
@@ -77,6 +77,7 @@
 </template>
 
 <script setup>
+import logo from '../assets/letterm.png'
 import { ref } from 'vue'
 
 const collapse = ref(true)

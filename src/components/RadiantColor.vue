@@ -2,21 +2,22 @@
   <div class="skill">
     <div class="outer">
       <div class="inner">
-        <div id="number">{{ progressValue }}%</div>
+        <div id="number2">{{ progressValue }} %</div>
       </div>
     </div>
 
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100px" height="100px">
       <defs>
-        <linearGradient id="GradientColor">
-          <stop offset="0%" stop-color="#6EFFBA" />
-          <stop offset="100%" stop-color="#38D090" />
+        <linearGradient id="GradientColor2">
+          <stop offset="0%" stop-color="#FFFC76" />
+          <stop offset="100%" stop-color="#FFD73B" />
         </linearGradient>
       </defs>
       <circle
-        cx="80"
-        cy="80"
-        r="70"
+        id="circle2"
+        cx="49"
+        cy="49"
+        r="43"
         stroke-linecap="round"
         :style="{ '--stroke-dashoffset': calculatedStrokeDashoffset }"
       />
@@ -33,43 +34,44 @@ const props = defineProps({
   progressValue: Number,
   strokeDashoffset: String
 })
-const calculatedStrokeDashoffset = ref(472 - progressValue * 4.72)
+const calculatedStrokeDashoffset = ref(262 - progressValue * 2.62)
 </script>
 
 <style scoped>
 .skill {
-  width: 160px;
-  height: 160px;
-  transform: rotate(-90deg);
+  width: 100px;
+  height: 100px;
+
   position: relative;
+  transform: rotate(-90deg);
 }
 .outer {
-  width: 160px;
-  height: 160px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 
-  padding: 20px;
-  background: #edeff1;
+  padding: 12px;
+  background: #e5e6e8;
 }
 .inner {
-  width: 120px;
-  height: 120px;
+  width: 98.5%;
+  height: 98.5%;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #ffffff;
 }
-#number {
+#number2 {
   font-weight: 600px;
   color: #212b36;
   transform: rotate(90deg);
 }
-circle {
+#circle2 {
   fill: none;
-  stroke: url(#GradientColor);
-  stroke-width: 20px;
-  stroke-dasharray: 472;
+  stroke: url(#GradientColor2);
+  stroke-width: 12px;
+  stroke-dasharray: 262;
   stroke-dashoffset: var(--stroke-dashoffset, 0);
 }
 svg {

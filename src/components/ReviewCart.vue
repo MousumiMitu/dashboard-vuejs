@@ -17,7 +17,7 @@
 
     <div class="d-md-flex py-3">
       <div class="user-img">
-        <img src="man.png" alt="" class="w-100" />
+        <img src="../assets/man.png" alt="" class="w-100" />
       </div>
       <div class="my-auto ps-md-4 pt-2 pt-sm-0">
         <h5 class="fs-6">Jayway sfom</h5>

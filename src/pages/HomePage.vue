@@ -30,9 +30,9 @@
             <div class="col-md-6 shadow-sm">
               <div class="row py-5 px-1 px-md-3">
                 <div class="col-5">
-                  <!-- <CircularProgressBar /> -->
+                  <RadiantColor :progressValue="85" />
                 </div>
-                <div class="my-auto col-7 border">
+                <div class="my-auto col-7">
                   <h3>38,566</h3>
                   <small>Pending for payment</small>
                 </div>
@@ -41,7 +41,7 @@
             <div class="col-md-6 shadow-sm">
               <div class="row py-5 px-1 px-md-3">
                 <div class="col-5">
-                  <!-- <CircularProgressBar /> -->
+                  <RadiantColor :progressValue="45" />
                 </div>
                 <div class="my-auto col-7">
                   <h3 class="">38,566</h3>
@@ -56,7 +56,7 @@
           <div class="shadow-sm rounded p-4">
             <h3 class="fs-5 text-black">Tours Available</h3>
             <div class="d-flex justify-content-center overflow-x-hidden my-5">
-              <!-- <CircularProgressBar /> -->
+              <CircularProgressBar :progressValue="65" />
             </div>
             <div class="d-flex justify-content-between align-items-center pb-2 pt-4">
               <div class="d-flex">
@@ -97,13 +97,15 @@
 </template>
 
 <script setup>
-import ImgCard from '../components/ImgCard.vue'
+import ImgCard from '../components/imgcard.vue'
 import NavBar from '../components/NavBar.vue'
 import ReviewCart from '../components/ReviewCart.vue'
 import BookingCart from '../components/BookingCart.vue'
 import ProgressBar from '../components/ProgressBar.vue'
 import BarChartData from '../components/BarChartData.vue'
 import LineBar from '../components/LineBar.vue'
+import CircularProgressBar from '../components/CircularProgressBar.vue'
+import RadiantColor from '../components/RadiantColor.vue'
 
 const progressBar = [
   { id: 1, color: '#ffab00', bar: '15%', title: 'Booking' },
