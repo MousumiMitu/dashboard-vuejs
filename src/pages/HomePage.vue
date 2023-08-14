@@ -2,7 +2,7 @@
   <div class="w-100 min-h-screen">
     <NavBar />
     <div class="m-4">
-      <ImgCard />
+      <ViewCard />
       <div class="row py-3">
         <div class="col-lg-8">
           <div class="row">
@@ -97,7 +97,7 @@
 </template>
 
 <script setup>
-import ImgCard from '../components/imgcard.vue'
+import ViewCard from '../components/ViewCard.vue'
 import NavBar from '../components/NavBar.vue'
 import ReviewCart from '../components/ReviewCart.vue'
 import BookingCart from '../components/BookingCart.vue'
