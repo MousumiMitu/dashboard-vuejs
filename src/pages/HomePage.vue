@@ -4,7 +4,7 @@
     <div class="m-4">
       <ViewCard />
       <div class="row py-3">
-        <div class="col-lg-8">
+        <div class="col-xl-8">
           <div class="row">
             <div class="col-md-6">
               <div>
@@ -52,7 +52,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-xl-4">
           <div class="shadow-sm rounded p-4">
             <h3 class="fs-5 text-black">Tours Available</h3>
             <div class="d-flex justify-content-center overflow-x-hidden my-5">
