@@ -30,7 +30,11 @@
             <div class="col-md-6 shadow-sm">
               <div class="row py-5 px-1 px-md-3">
                 <div class="col-5">
-                  <RadiantColor :progressValue="85" />
+                  <RadiantColor
+                    :progressValue="85"
+                    :gradientStartColor="'#FFFC76'"
+                    :gradientEndColor="'#FFD73B'"
+                  />
                 </div>
                 <div class="my-auto col-7">
                   <h3>38,566</h3>
@@ -41,7 +45,11 @@
             <div class="col-md-6 shadow-sm">
               <div class="row py-5 px-1 px-md-3">
                 <div class="col-5">
-                  <RadiantColor :progressValue="45" />
+                  <RadiantColor
+                    :progressValue="45"
+                    :gradientStartColor="'#FFFC76'"
+                    :gradientEndColor="'#FFD73B'"
+                  />
                 </div>
                 <div class="my-auto col-7">
                   <h3 class="">38,566</h3>
@@ -90,8 +98,6 @@
       <div>
         <BookingCart />
       </div>
-
-      <!-- <LineChartParent /> -->
     </div>
   </div>
 </template>

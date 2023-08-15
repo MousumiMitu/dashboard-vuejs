@@ -1,16 +1,22 @@
 <template>
-  <div class="skill">
-    <div class="outer">
-      <div class="inner">
+  <div class="skill position-relative">
+    <div class="outer w-100 h-100 rounded-circle">
+      <div class="inner rounded-circle d-flex justify-content-center align-items-center">
         <div id="number2">{{ progressValue }} %</div>
       </div>
     </div>
 
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100px" height="100px">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      width="100px"
+      height="100px"
+      class="position-absolute top-0 start-0"
+    >
       <defs>
         <linearGradient id="GradientColor2">
-          <stop offset="0%" stop-color="#FFFC76" />
-          <stop offset="100%" stop-color="#FFD73B" />
+          <stop offset="0%" :stop-color="gradientStartColor" />
+          <stop offset="100%" :stop-color="gradientEndColor" />
         </linearGradient>
       </defs>
       <circle
@@ -26,13 +32,14 @@
 </template>
 
 <script setup>
-import { defineProps, ref } from 'vue'
+import { ref } from 'vue'
 
-const { progressValue } = props
+const { progressValue, gradientStartColor, gradientEndColor } = props
 
 const props = defineProps({
   progressValue: Number,
-  strokeDashoffset: String
+  gradientStartColor: String,
+  gradientEndColor: String
 })
 const calculatedStrokeDashoffset = ref(262 - progressValue * 2.62)
 </script>
@@ -41,25 +48,15 @@ const calculatedStrokeDashoffset = ref(262 - progressValue * 2.62)
 .skill {
   width: 100px;
   height: 100px;
-
-  position: relative;
   transform: rotate(-90deg);
 }
 .outer {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-
   padding: 12px;
   background: #e5e6e8;
 }
 .inner {
   width: 98.5%;
   height: 98.5%;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: #ffffff;
 }
 #number2 {
@@ -73,10 +70,5 @@ const calculatedStrokeDashoffset = ref(262 - progressValue * 2.62)
   stroke-width: 12px;
   stroke-dasharray: 262;
   stroke-dashoffset: var(--stroke-dashoffset, 0);
-}
-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 </style>
